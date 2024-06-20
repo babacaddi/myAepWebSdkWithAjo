@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-Driven Content Example</title>
+</head>
+<body>
+    <h1>Dynamic Content Example</h1>
+    
+    <button id="loadButton">Load Content</button>
+    
+    <div id="contentContainer"></div>
+
+    <script>
+        const loadButton = document.getElementById('loadButton');
+        const contentContainer = document.getElementById('contentContainer');
+
+        loadButton.addEventListener('click', function() {
+            // Simulating content loading
+            setTimeout(function() {
+                const newContent = `
+                    <h2>Dynamically Loaded Content</h2>
+                    <p>This content was generated and inserted using JavaScript.</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                `;
+                contentContainer.innerHTML = newContent;
+            }, 500); // 500ms delay to simulate loading
+        });
+
+  const hostnameParts = window.location.hostname.split('.');
+  console.log("Hostname parts:", hostnameParts);
+
+
+    </script>
+</body>
+</html>
